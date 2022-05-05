@@ -1,1 +1,129 @@
-<p>admin-profile works!</p>
+<!-- <div class="card">
+  <div class="header">
+
+    <h4 class="title"><span class="now-ui-icons users_single-02"></span> Profil </h4>
+    <p class="category">: {{ auth.firstName }} {{auth.lastName}}</p>
+  </div>
+  <div class="content">
+    <div [attr.id]="'ct-perfect-fourth'" class="ct-chart ct-perfect-fourth"></div>
+    <div [attr.id]="'ct-perfect-fourth'" class="ct-chart ct-perfect-fourth"></div>
+
+    <div class="footer">
+      <div class="legend">
+        
+      </div>
+      <hr *ngIf="true">
+      <div class="stats">
+        <i [ngClass]="'fa fa-clock-o'"></i> Etudiant </div>
+    </div>
+  </div>
+</div> -->
+
+<div class="container bootstrap snippets bootdey">
+    <div class="panel-body inf-content">
+        <div class="row">
+            <div class="col-md-4">
+                <img alt="" style="width:600px;" title="" class="img-circle img-thumbnail isTooltip"
+                    src="https://bootdey.com/img/Content/avatar/avatar7.png" data-original-title="Usuario">
+                <ul title="Ratings" class="list-inline ratings text-center">
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                    <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <!-- <strong>Information</strong><br> -->
+                <div class="table-responsive">
+                    <table class="table table-user-information">
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-asterisk text-primary"></span>
+                                        Nom d'utilisateur :
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    {{auth.firstName.toLowerCase()}}-{{auth.lastName.toLowerCase()}}-{{auth.grade}}-{{auth.specialte}}
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-user  text-primary"></span>
+                                        Prénom
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    {{auth.firstName}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-cloud text-primary"></span>
+                                        Nom
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    {{auth.lastName}}
+                                </td>
+                            </tr>
+
+
+
+
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-eye-open text-primary"></span>
+                                        Rôle
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    {{auth.roles[0]}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-envelope text-primary"></span>
+                                        Email
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    {{auth.email}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        Niveau d'Etude :
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    {{auth.grade}}
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <strong>
+                                        <span class="glyphicon glyphicon-calendar text-primary"></span>
+                                        Option
+                                    </strong>
+                                </td>
+                                <td class="text-primary">
+                                    {{auth.specialte}}
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
