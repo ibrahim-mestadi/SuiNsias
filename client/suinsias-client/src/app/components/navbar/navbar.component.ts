@@ -10,6 +10,7 @@ import { Router } from '@angular/router';
 export class NavbarComponent implements OnInit {
   private toggleButton: any;
   private sidebarVisible: boolean;
+  private access: any ;
 
   constructor(private auth:AuthenticationService,private router:Router) {
       this.sidebarVisible = false;
@@ -25,13 +26,9 @@ export class NavbarComponent implements OnInit {
 
   }
   sidebarToggle() {
-
   }
-
   isDocumentation() {
-
   }
-
   isAuthentificated()
   {
     return this.auth.isAuthentificated();
@@ -40,6 +37,5 @@ export class NavbarComponent implements OnInit {
     console.log("Deconnexion");
     this.auth.logOut();
     this.router.navigateByUrl('/index');
-
   }
 }
