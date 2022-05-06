@@ -16,6 +16,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { InformationComponent } from './pages/information/information.component';
 import { LoginComponent } from './pages/login/login.component';
 import { NotfoundComponent } from './pages/notfound/notfound.component';
+import { SidbarComponent } from './components/sidbar/sidbar.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { NotfoundComponent } from './pages/notfound/notfound.component';
     HomeComponent,
     InformationComponent,
     LoginComponent,
-    NotfoundComponent
+    NotfoundComponent,
+    SidbarComponent
   ],
   imports: [
     BrowserModule,
