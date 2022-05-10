@@ -1,15 +1,29 @@
+import { AnnonceService } from './../../services/annonce.service';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-information',
   templateUrl: './information.component.html',
-  styleUrls: ['./information.component.css']
+  styleUrls: ['./information.component.scss']
 })
 export class InformationComponent implements OnInit {
 
-  constructor() { }
+  annonces;
+  constructor(private annonceService: AnnonceService) {
+    this.getAllAnnonce();
+  }
 
-  ngOnInit(): void {
+  ngOnInit() {
+  }
+  getAllAnnonce() {
+    this.annonceService.getAllAnnonces().subscribe(
+      data => {
+        this.annonces = data;
+      },
+      err => {
+        console.log(err);
+      }
+    );
   }
 
 }
