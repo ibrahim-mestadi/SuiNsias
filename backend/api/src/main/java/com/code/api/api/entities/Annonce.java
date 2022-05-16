@@ -1,4 +1,4 @@
-package doc.entities;
+package api.entities;
 
 import java.util.Date;
 
@@ -20,5 +20,12 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class Annonce {
-	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private String title;
+	@Length(max = 255)
+	private String contenu;
+	private Date date;
+	private String urgence;
 }
