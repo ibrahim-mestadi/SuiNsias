@@ -1,4 +1,4 @@
-package doc.entities;
+package api.entities;
 
 import java.util.Date;
 
@@ -18,5 +18,10 @@ import lombok.ToString;
 @NoArgsConstructor
 @ToString
 public class Message {
-	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+private String nom;
+private String email;
+private String message;
 }
