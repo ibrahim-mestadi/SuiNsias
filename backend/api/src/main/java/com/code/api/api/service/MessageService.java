@@ -7,7 +7,7 @@ import javax.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import api.dao.MessageRepository;
+import api.api.MessageRepository;
 import api.entities.Message;
 
 @Service

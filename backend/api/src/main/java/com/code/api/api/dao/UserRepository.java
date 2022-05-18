@@ -1,4 +1,4 @@
-package doc.dao;
+package doc.api;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
