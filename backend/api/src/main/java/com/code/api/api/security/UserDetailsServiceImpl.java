@@ -1,4 +1,4 @@
-package doc.security;
+package api.security;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -12,8 +12,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import doc.service.AccountService;
-import doc.service.IAccountService;
+import api.service.AccountService;
+import api.service.IAccountService;
 
 
 @Service
@@ -24,7 +24,7 @@ public class UserDetailsServiceImpl implements UserDetailsService{
 	
 	@Override
 	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		doc.entities.User appUser=accountService.loadUserByEmail(username);
+		api.entities.User appUser=accountService.loadUserByEmail(username);
 		if(appUser==null) throw new UsernameNotFoundException("Invalid User");
 		
 		Collection<GrantedAuthority> authorities=new ArrayList<GrantedAuthority>();

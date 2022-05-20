@@ -21,8 +21,8 @@ public class JWTFilter extends UsernamePasswordAuthenticationFilter {
 			throws AuthenticationException {
 
 		try {
-			doc.entities.User user = null;
-			user = new ObjectMapper().readValue(request.getInputStream(), doc.entities.User.class);
+			api.entities.User user = null;
+			user = new ObjectMapper().readValue(request.getInputStream(), api.entities.User.class);
 			return authenticationManager
 					.authenticate(new UsernamePasswordAuthenticationToken(user.getEmail(), user.getPassword()));
 		} catch (IOException e) {

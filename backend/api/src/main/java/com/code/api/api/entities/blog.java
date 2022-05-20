@@ -1,4 +1,4 @@
-package doc.entities;
+package api.entities;
 
 public class blog {
 

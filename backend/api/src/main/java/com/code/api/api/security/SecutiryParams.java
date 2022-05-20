@@ -1,4 +1,4 @@
-package doc.security;
+package api.security;
 
 public class SecutiryParams {
 	public static final String SECRET = "secret1";
