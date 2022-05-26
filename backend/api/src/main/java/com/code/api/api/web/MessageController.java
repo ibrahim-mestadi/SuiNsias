@@ -1,4 +1,4 @@
-package doc.web;
+package api.web;
 
 import java.util.List;
 
@@ -8,10 +8,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import doc.entities.Annonce;
-import doc.entities.Message;
-import doc.service.IMessageService;
-import doc.service.MessageService;
+import api.entities.Annonce;
+import api.entities.Message;
+import api.service.IMessageService;
+import api.service.MessageService;
 import lombok.Data;
 
 @RestController

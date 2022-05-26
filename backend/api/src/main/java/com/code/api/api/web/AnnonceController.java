@@ -1,4 +1,4 @@
-package doc.web;
+package api.web;
 
 import java.util.Date;
 import java.util.List;
@@ -9,10 +9,10 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
-import doc.entities.Annonce;
-import doc.entities.User;
-import doc.service.AnnonceService;
-import doc.service.IAnnonceService;
+import api.entities.Annonce;
+import api.entities.User;
+import api.service.AnnonceService;
+import api.service.IAnnonceService;
 import lombok.Data;
 
 @RestController
