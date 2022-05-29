@@ -1,5 +1,5 @@
 # SuiNsias 
-Is platform for ensiasts to make gerneale annouces eassy to acces, 
+Is platform for ensiasts to make general annouces easy to read, 
 
 # worked in the project :
 
@@ -22,6 +22,6 @@ https://drive.google.com/drive/folders/1T2Ymag0x0Q-d5AcwOYEJzssU5nbNiT4g?usp=sha
 
 #uml : 
 
-Comming jut needs to be generated using a digital tool , 
+Comming jut needs to be generated using a digital tool 
 
 
