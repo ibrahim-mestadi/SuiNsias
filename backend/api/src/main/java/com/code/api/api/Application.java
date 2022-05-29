@@ -7,7 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import api.dao.RoleRepository;
+import api.api.RoleRepository;
 import api.entities.Annonce;
 import api.entities.Message;
 import api.entities.Role;
