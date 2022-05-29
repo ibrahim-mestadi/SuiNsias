@@ -1,9 +1,11 @@
-package api.service;
+package doc.service;
 
 import java.util.List;
 
-import api.entities.Message;
+import doc.entities.Message;
 
 public interface IMessageService {
+	public Message saveMessage(Message message);
 	
+	public List<Message> getAllMessages();
 }

@@ -1,10 +1,11 @@
-package api.service;
+package doc.service;
 
 import java.util.List;
 
-import api.entities.Annonce;
+import doc.entities.Annonce;
 
 public interface IAnnonceService {
 
-	
+	public List<Annonce> getAllAnnonces();
+	public Annonce saveAnnonce(Annonce annonce);
 }
