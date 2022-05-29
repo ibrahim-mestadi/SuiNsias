@@ -10,7 +10,7 @@ Is platform for ensiasts to make general annouces easy to read,
 * Mestadi Ibrahim
 
 
-#link to demo video : 
+## link to demo video : 
 https://drive.google.com/drive/folders/1T2Ymag0x0Q-d5AcwOYEJzssU5nbNiT4g?usp=sharing
 
 #design patterns used : 
