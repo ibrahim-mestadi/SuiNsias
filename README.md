@@ -13,6 +13,9 @@ Is platform for ensiasts to make general annouces easy to read,
 ## link to demo video : 
 https://drive.google.com/drive/folders/1T2Ymag0x0Q-d5AcwOYEJzssU5nbNiT4g?usp=sharing
 
+## Rapport du projet : 
+https://drive.google.com/file/d/1JwmwFsfOq5hJ5nHDkqlkYCi-JzoCd0IR/view?usp=sharing
+
 ## design patterns used : 
 
 * dependecy injection, a lot of time to inject services, components in our controllers or repositories in services ... 
